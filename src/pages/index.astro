@@ -1,0 +1,61 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		.memberContainer {
+		display:flex;
+		margin-bottom: 24px;
+		}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+		</main>
+		<Layout
+	title="Digital Basics"
+	description=""
+	heroImage="/digital-basics-logo.png"
+>
+
+<div id="home">
+
+	<h4>
+		Vision
+	</h4>
+	
+	<p>
+		To be a leading innovator and provider of cutting-edge technology products, revolutionizing industries
+		 and empowering individuals worldwide.
+	</p>
+	
+	<h4>
+		Mission
+	</h4>
+	
+	<p>
+		Our mission is to design, develop, and produce exceptional technology products that enhance the lives of our customers.
+		Through relentless innovation, we aim to create solutions that address evolving needs and challenges across various industries.
+		We strive to build a culture of excellence, fostering collaboration, passion, and integrity, while maintaining a strong commitment to
+		sustainable practices. By leveraging our expertise and staying at the forefront of emerging technologies, we aspire to shape the future and make a positive impact on
+		the global community.
+	</p>
+</div>
+	
+
+</Layout>
+
+		<Footer />
+	</body>
+	
+</html>
+

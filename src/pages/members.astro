@@ -1,0 +1,57 @@
+---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/BlogPost.astro';
+import Footer from '../components/Footer.astro';
+
+---
+
+<Header/>
+
+<style>
+    .memberContainer {
+    display:flex;
+    margin-bottom: 24px;
+    }
+    .hero-image {
+		width: 100%;
+	}
+	.hero-image img {
+		display: block;
+		margin: 0 auto;
+	}
+    </style>
+<Layout
+	title="Members"
+	description=""
+	heroImage=""
+	
+>
+<div id="members">
+	<div class="memberContainer">
+
+        <div class="hero-image">
+            <img width={300} height={300} src={"/person.jpg"} alt="" />
+        </div>
+		<div class="memberText">
+			<h5>Jane Doe</h5>
+			<h6>CEO</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				 labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra.
+				  Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing.</p>
+		</div>
+	</div>
+	<div class="memberContainer">
+
+		<div class="hero-image">
+            <img width={300} height={300} src={"/person.jpg"} alt="" />
+        </div>
+		<div class="memberText">
+			<h5>Jane Doe</h5>
+			<h6>CEO</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				 labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra.
+				  Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing.</p>
+		</div>
+</div>
+<Footer/>
+</Layout>
